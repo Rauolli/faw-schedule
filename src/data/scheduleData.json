@@ -1,0 +1,11 @@
+[
+    { "time": "08:00", "activity": "Unterricht" },
+    { "time": "09:30", "activity": "1. Frühstückpause" },
+    { "time": "09:45", "activity": "Unterricht" },
+    { "time": "11:15", "activity": "2. Frühstückpause" },
+    { "time": "11:30", "activity": "Unterricht" },
+    { "time": "13:00", "activity": "Mittagspause" },
+    { "time": "13:45", "activity": "Unterricht" },
+    { "time": "15:15", "activity": "Feierabend" }
+  ]
+  

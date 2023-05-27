@@ -1,0 +1,70 @@
+/* DigitalClock.css */
+
+.digital-clock {
+    display: flex;
+    align-items: center;
+  }
+  
+  .digit-container {
+    display: flex;
+  }
+  
+  .colon {
+    margin: 0 0.5rem;
+    font-size: 2rem;
+  }
+  
+  /* Weitere CSS-Stile für die BCD-Anzeige hinzufügen */
+  /* DigitalClock.css */
+
+.bcd-digit {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 4px;
+    width: 50px;
+    height: 100px;
+    background-color: black;
+    border-radius: 4px;
+  }
+  
+  .segment {
+    background-color: #ff0000;
+  }
+  
+  .on {
+    background-color: #00ff00;
+  }
+  
+  .off {
+    background-color: #000000;
+  }
+  
+  .segment.top {
+    grid-column: 1 / 4;
+  }
+  
+  .segment.top-left {
+    grid-row: 1 / 4;
+  }
+  
+  .segment.top-right {
+    grid-row: 1 / 4;
+  }
+  
+  .segment.middle {
+    grid-column: 1 / 4;
+  }
+  
+  .segment.bottom-left {
+    grid-row: 3 / 6;
+  }
+  
+  .segment.bottom-right {
+    grid-row: 3 / 6;
+  }
+  
+  .segment.bottom {
+    grid-column: 1 / 4;
+  }
+  
