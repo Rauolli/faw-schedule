@@ -1,32 +1,40 @@
 // DigitalClock.jsx
 
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
+import BCDCodeNumber from './BCDCodeDigit';
+import './DigitalClock.css';
 
 const DigitalClock = () => {
-  const [currentTime, setCurrentTime] = useState(new Date());
+  const [time, setTime] = useState(new Date());
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentTime(new Date());
+      setTime(new Date());
     }, 1000);
 
-    return () => {
-      clearInterval(timer);
-    };
+    return () => clearInterval(timer);
   }, []);
 
-  const formatTime = (time) => {
-    return time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+  const formatDigit = (digit) => {
+    if (digit < 10) {
+      return '0' + digit;
+    }
+    return digit.toString();
   };
 
+  const hours = formatDigit(time.getHours());
+  const minutes = formatDigit(time.getMinutes());
+  const seconds = formatDigit(time.getSeconds());
+
   return (
-    <div className="digital-clock">
-      <span className="hours">{formatTime(currentTime).slice(0, 2)}</span>
-      <span className="separator">:</span>
-      <span className="minutes">{formatTime(currentTime).slice(3, 5)}</span>
-      <span className="separator">:</span>
-      <span className="seconds">{formatTime(currentTime).slice(6, 8)}</span>
-    </div>
+    
+    <span className="digital-clock">
+      <BCDCodeNumber number={hours} />
+      <span className="colon">:</span>
+      <BCDCodeNumber number={minutes} />
+      <span className="colon">:</span>
+      <BCDCodeNumber number={seconds} />
+    </span>
   );
 };
 

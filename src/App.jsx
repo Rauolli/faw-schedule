@@ -23,6 +23,7 @@ const App = () => {
   return (
     <div className="App">
       <DigitalClock currentTime={currentTime} />
+      
       <h1>Tagesplan</h1>
       <ScheduleTable currentTime={currentTime} scheduleData={scheduleData} />
     </div>
