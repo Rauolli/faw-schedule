@@ -27,14 +27,15 @@ const DigitalClock = () => {
   const seconds = formatDigit(time.getSeconds());
 
   return (
-    
-    <span className="digital-clock">
-      <BCDCodeNumber number={hours} />
-      <span className="colon">:</span>
-      <BCDCodeNumber number={minutes} />
-      <span className="colon">:</span>
-      <BCDCodeNumber number={seconds} />
-    </span>
+    <>
+     <div className="digital-clock">
+        <BCDCodeNumber number={hours} /> 
+        <div className="colon">:</div>
+        <BCDCodeNumber number={minutes} />
+        <div className="colon">:</div>
+        <BCDCodeNumber number={seconds} />
+    </div>
+    </>
   );
 };
 

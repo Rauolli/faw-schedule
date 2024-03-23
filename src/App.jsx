@@ -1,29 +1,20 @@
 // App.jsx
 
-import { useState, useEffect } from 'react';
+// import { useState, useEffect } from 'react';
 import './App.css';
 import DigitalClock from './components/DigitalClock';
+import DateDisplay from './components/DateDisplay';
+// import moment from 'moment';
 import ScheduleTable from './components/ScheduleTable';
 import scheduleData from './data/scheduleData';
 
 
 const App = () => {
-  const [currentTime, setCurrentTime] = useState(new Date());
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentTime(new Date());
-    }, 1000);
-
-    return () => {
-      clearInterval(timer);
-    };
-  }, []);
-
+  const currentTime = new Date();
   return (
     <div className="App">
-      <DigitalClock currentTime={currentTime} />
-      
+      <DateDisplay />
+      <DigitalClock />
       <h1>Tagesplan</h1>
       <ScheduleTable currentTime={currentTime} scheduleData={scheduleData} />
     </div>

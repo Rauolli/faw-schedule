@@ -31,8 +31,8 @@ const BCDCodeDigit = ({ digit }) => {
  
   return (
     <>   
-      <SegmentComponent1 />
-      <SegmentComponent2 />
+      <SegmentComponent1 className="segment"/>
+      <SegmentComponent2 className="segment" />
     </>
   );
 };

@@ -2,24 +2,11 @@
 .active{
   background-color: rgb(202, 105, 8);
 }
+
 .digital-clock {
   display: flex;
-  width: 1000px;
-  height: 250px; 
-}
-
-.clock-display{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 10px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-}
-
-.digit-container{
-  z-index: 100;
+  justify-content: stretch;
+  background-color: black;
 }
 
 .bcd-number {
@@ -27,7 +14,14 @@
 }
 
 .colon {
-  color: rgb(255, 68, 0); /* Farbe der Doppelpunkte anpassen */
+  padding-top: 3rem;
+  color: rgb(66, 149, 57);  /* Farbe der Doppelpunkte anpassen */
   font-size: 140px; /* Größe der Doppelpunkte anpassen */
-  margin: 0 10px; /* Abstand zwischen den Segmenten und Doppelpunkten */
+  background-color: black;
+  line-height: 24px;
+
+}
+
+.segment{
+  max-height: 9rem;
 }
