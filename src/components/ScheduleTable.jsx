@@ -6,7 +6,7 @@ import ProgressBar from './ProgressBar';
 
 const ScheduleTable = ({ scheduleData }) => {
   // current-test-time for development
-  const testHour = 6;
+  const testHour = 3;
   const currentTestTime = new Date();
   const minute = currentTestTime.getMinutes();
   // Beginnend um 8:00 Uhr + der zu bestimmenden testHour

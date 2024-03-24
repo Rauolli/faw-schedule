@@ -10,6 +10,8 @@
 table {
   width: 100%;
   border-collapse: collapse;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 th,
@@ -64,12 +66,12 @@ thead {
 
 .past{
   background-color:rgb(33, 75, 45);
-  color:#518b48
+  color:#909f5b
 }
 
 .future{
   background-color:rgb(70, 3, 3);
-  color:#c27878
+  color:#d68787
 }
 
 .active{
