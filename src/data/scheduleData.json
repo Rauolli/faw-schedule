@@ -1,11 +1,10 @@
 [
-    { "time": "08:00", "activity": "Unterricht" },
-    { "time": "09:30", "activity": "1. Frühstückpause" },
-    { "time": "09:45", "activity": "Unterricht" },
-    { "time": "11:15", "activity": "2. Frühstückpause" },
-    { "time": "11:30", "activity": "Unterricht" },
-    { "time": "13:00", "activity": "Mittagspause" },
-    { "time": "13:45", "activity": "Unterricht" },
-    { "time": "15:15", "activity": "Feierabend" }
+    { "start": "08:00", "end": "9:29", "activity": "Unterricht" },
+    { "start": "09:30", "end": "9:45", "activity": "1. Frühstückpause" },
+    { "start": "09:46", "end": "11:14", "activity": "Unterricht" },
+    { "start": "11:15", "end": "11:30", "activity": "2. Frühstückpause" },
+    { "start": "11:31", "end": "14:59", "activity": "Unterricht" },
+    { "start": "13:00", "end": "13:45", "activity": "Mittagspause" },
+    { "start": "13:46", "end": "15:00", "activity": "Unterricht" }
   ]
   
