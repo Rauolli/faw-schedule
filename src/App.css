@@ -55,6 +55,7 @@ thead {
 
 .progress-row {
   background-color: rgb(245, 179, 114);
+  height:80px;
   color:#2a0101
 }
 
@@ -62,6 +63,14 @@ thead {
   height: 100%;
   background-color: rgb(4, 99, 4);
   border-radius: 10px 0 0 10px;
+  border-right: 1px solid rgb(2, 48, 2);
+}
+
+.progress-label {
+  font-size: 16px;
+  text-align: center;
+  line-height: 30px;
+  color: rgb(4, 99, 4);
 }
 
 .past{
