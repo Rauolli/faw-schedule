@@ -3,7 +3,7 @@
     { "start": "09:30", "end": "9:45", "activity": "1. Frühstückpause" },
     { "start": "09:46", "end": "11:14", "activity": "Unterricht" },
     { "start": "11:15", "end": "11:30", "activity": "2. Frühstückpause" },
-    { "start": "11:31", "end": "14:59", "activity": "Unterricht" },
+    { "start": "11:31", "end": "12:59", "activity": "Unterricht" },
     { "start": "13:00", "end": "13:45", "activity": "Mittagspause" },
     { "start": "13:46", "end": "15:00", "activity": "Unterricht" }
   ]
