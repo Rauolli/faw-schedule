@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import BCDCodeNumber from './BCDCodeDigit';
-import './DigitalClock.css';
+import '../styles/components/DigitalClock.css';
 
 const DigitalClock = () => {
   const [time, setTime] = useState(new Date());
@@ -24,7 +24,7 @@ const DigitalClock = () => {
 
   const hours = formatDigit(time.getHours());
   const minutes = formatDigit(time.getMinutes());
-  const seconds = formatDigit(time.getSeconds());
+  // const seconds = formatDigit(time.getSeconds());
 
   return (
     <>
@@ -32,8 +32,8 @@ const DigitalClock = () => {
         <BCDCodeNumber number={hours} /> 
         <div className="colon">:</div>
         <BCDCodeNumber number={minutes} />
-        <div className="colon">:</div>
-        <BCDCodeNumber number={seconds} />
+        {/* <div className="colon">:</div>
+        <BCDCodeNumber number={seconds} /> */}
     </div>
     </>
   );

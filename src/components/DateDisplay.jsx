@@ -1,7 +1,7 @@
 // DateDisplay component
 import { useState, useEffect } from 'react';
 import BCDCodeNumber from './BCDCodeDigit';
-import './DigitalClock.css';
+import '../styles/components/DigitalClock.css';
 
 const DateDisplay = () => {
   const [date, setDate] = useState(new Date());
