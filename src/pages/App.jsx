@@ -15,7 +15,6 @@ const App = () => {
     <div className="App">
       <DateDisplay />
       <DigitalClock />
-      <h1>Tagesplan</h1>
       <ScheduleTable scheduleData={scheduleData} />
     </div>
   );

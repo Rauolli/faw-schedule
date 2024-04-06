@@ -15,7 +15,11 @@ table {
   thead {
     color:rgb(181, 123, 8);
     background-color: #252424;
-    font-size: larger;
+    
+  }
+  th {
+    font-size: 1.8rem;
+    font-weight: 300;
   }
 
   .past{
