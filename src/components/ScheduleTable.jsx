@@ -78,7 +78,7 @@ const ScheduleTable = ({ scheduleData }) => {
     <table>
       <thead>
         <tr>
-          <th>#</th>
+          <th>Nr.</th>
           <th>von</th>
           <th>bis</th>
           <th>Aktivität</th>

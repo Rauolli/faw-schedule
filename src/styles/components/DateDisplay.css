@@ -1,0 +1,27 @@
+/* DateDisplay.css */
+.date-display {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+
+  }
+  
+  .colon {
+    padding-top: 1.1rem;
+    color: rgb(66, 149, 57);  /* Farbe der Doppelpunkte anpassen */
+    font-size: 60px; /* Größe der Doppelpunkte anpassen */
+    background-color: black;
+    
+  
+  }
+  
+  .segment{
+    max-height:9rem;
+    max-width:2rem;
+  }
+
+  .path5709{
+    fill: rgb(66, 149, 57);  
+  }
+  
+

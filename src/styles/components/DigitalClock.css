@@ -1,27 +1,22 @@
 /* DigitalClock.css */
-.active{
-  background-color: rgb(202, 105, 8);
-}
 
 .digital-clock {
   display: flex;
-  justify-content: stretch;
+  margin: 0 auto;
+  justify-content: center;
   background-color: black;
-}
 
-.bcd-number {
-  display: flex;
-}
+  >.colon {
+    color: rgb(57, 120, 149);  /* Farbe der Doppelpunkte anpassen */
+    font-size: 60px; /* Größe der Doppelpunkte anpassen */
+    background-color: black;
+  }
 
-.colon {
-  padding-top: 3rem;
-  color: rgb(66, 149, 57);  /* Farbe der Doppelpunkte anpassen */
-  font-size: 140px; /* Größe der Doppelpunkte anpassen */
-  background-color: black;
-  line-height: 24px;
+  >.segment{ 
+    max-width:5rem;
+  }
 
-}
-
-.segment{
-  max-height: 9rem;
+  .path5709{
+    fill: rgb(57, 120, 149);  
+  }
 }

@@ -1,12 +1,5 @@
 /* App.css */
-/* .App{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(188, 185, 185);
-  
-} */
+ 
 table {
   width: 100%;
   border-collapse: collapse;
@@ -91,6 +84,4 @@ thead {
   font-weight: bold;
 }
 
-#path5709{
-  fill: rgb(66, 149, 57);  
-}
+
