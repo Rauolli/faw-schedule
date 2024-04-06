@@ -1,11 +1,11 @@
 // App.jsx
 
 // import { useState, useEffect } from 'react';
-import './App.css';
-import DigitalClock from './components/DigitalClock';
-import DateDisplay from './components/DateDisplay';
-import ScheduleTable from './components/ScheduleTable';
-import scheduleData from './data/scheduleData';
+import '../styles/pages/App.css';
+import DigitalClock from '../components/DigitalClock';
+import DateDisplay from '../components/DateDisplay';
+import ScheduleTable from '../components/ScheduleTable';
+import scheduleData from '../data/scheduleData';
 
 
 const App = () => {
