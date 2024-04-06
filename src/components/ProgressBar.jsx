@@ -1,5 +1,6 @@
 // ProgressBar.jsx
 import PropTypes from 'prop-types';
+import '../styles/components/ProgressBar.css';
 
 const ProgressBar = ({ progress }) => {
 

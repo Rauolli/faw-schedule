@@ -1,0 +1,37 @@
+/* ScheduleTable.css */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  th,
+  td {
+    border: 1px solid #151515;
+    padding: 8px;
+  }
+  
+  thead {
+    color:rgb(181, 123, 8);
+    background-color: #252424;
+    font-size: larger;
+  }
+
+  .past{
+    background-color:rgb(33, 75, 45);
+    color:#909f5b
+  }
+  
+  .future{
+    background-color:rgb(70, 3, 3);
+    color:#d68787
+  }
+  
+  .active{
+    background-color: rgb(245, 179, 114);
+    color:#2a0101;
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: bold;
+  }

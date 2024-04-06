@@ -3,6 +3,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import ProgressBar from './ProgressBar';
+import '../styles/components/ScheduleTable.css';
 
 const ScheduleTable = ({ scheduleData }) => {
   // current-test-time for development
