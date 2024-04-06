@@ -7,7 +7,7 @@ import '../styles/components/ScheduleTable.css';
 
 const ScheduleTable = ({ scheduleData }) => {
   // current-test-time for development
-  const testHour = 3;
+  const testHour = 2;
   const currentTestTime = new Date();
   const minute = currentTestTime.getMinutes();
   // Beginnend um 8:00 Uhr + der zu bestimmenden testHour
@@ -74,6 +74,15 @@ const ScheduleTable = ({ scheduleData }) => {
     return Math.floor(timeToGo / 60000);
   }
 
+  function getMinutesLeft(startTime, currentTime){
+    const wholeTime = new Date();
+    const [startHour, startMinute] = startTime.split(':');
+    wholeTime.setHours(startHour, startMinute, 0);
+    const timeLeft = currentTime - wholeTime;
+    return Math.floor(timeLeft / 60000);
+  }
+
+
   const selectedRow = findSelectedRow();
   return (
     <table>
@@ -110,7 +119,7 @@ const ScheduleTable = ({ scheduleData }) => {
               </tr>
               {selectedRow === index && (
                 <tr className="progress-row">
-                  <td>{TimeToString(chooseTestTimeOrCurrentTime())} Uhr | noch {getMinutesToGo(chooseTestTimeOrCurrentTime(), item.end)} Minuten = {100 - getProgress(item.start, item.end)}% | {getProgress(item.start, item.end)}% bereits geschafft</td>
+                  <td>{TimeToString(chooseTestTimeOrCurrentTime())} Uhr | noch {getMinutesToGo(chooseTestTimeOrCurrentTime(), item.end)} Min. ({100 - getProgress(item.start, item.end)}%) | {getMinutesLeft(item.start, chooseTestTimeOrCurrentTime() )} Min. ({getProgress(item.start, item.end)}%) bereits geschafft</td>
                   <td colSpan="3">
                     <ProgressBar progress={getProgress(item.start, item.end)} />
                   </td>
