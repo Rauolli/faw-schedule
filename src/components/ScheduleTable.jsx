@@ -6,14 +6,7 @@ import ProgressBar from './ProgressBar';
 import '../styles/components/ScheduleTable.css';
 
 const ScheduleTable = ({ scheduleData }) => {
-  // current-test-time for development
-  const testHour = 2;
-  const currentTestTime = new Date();
-  const minute = currentTestTime.getMinutes();
-  // Beginnend um 8:00 Uhr + der zu bestimmenden testHour
-  currentTestTime.setHours(8 + testHour, minute, 0);
-  // for development only
-
+  
   const [currentTime, setTime] = useState(new Date());
 
   useEffect(() => {
@@ -52,9 +45,21 @@ const ScheduleTable = ({ scheduleData }) => {
 
     return Math.floor((elapsedTime / wholeTime) * 100).toString();
   }
+  
 
   function chooseTestTimeOrCurrentTime(){
-    return currentTime <= currentTestTime ? currentTime : currentTestTime;
+    // current-test-time for development
+    const currentTestTime = new Date();
+    const minute = currentTestTime.getMinutes();
+    const hour = currentTestTime.getHours();
+    if(hour >= 1 && hour <=8){
+      currentTestTime.setHours(hour + 7, minute, 0)
+    }
+    else if(hour >= 15 && hour <= 22){
+      currentTestTime.setHours(hour - 7, minute, 0);
+    }
+    
+    return currentTestTime;
   }
 
   function TimeToString(date){
